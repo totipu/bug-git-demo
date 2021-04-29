@@ -1,1 +1,1 @@
-print("Pozdrav od verzioniranog koda!")
+print("Pozdrav od verzioniranog koda, spremnog za novi commit!")
