@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Validation') {
       steps {
-        sh 'whoami'
+        sh '''whoami
+docker image list'''
       }
     }
 
