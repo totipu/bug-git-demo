@@ -1,9 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'python'
+    }
+
+  }
   stages {
     stage('Validation') {
       steps {
-        sh 'pytest'
+        sh '''pip install pytest
+python pytest'''
       }
     }
 
