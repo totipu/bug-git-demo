@@ -1,10 +1,15 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'python'
+    }
+
+  }
   stages {
     stage('Validation') {
       steps {
-        sh '''whoami
-docker image list'''
+        sh '''pip install pytest
+python pytest'''
       }
     }
 
