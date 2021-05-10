@@ -10,7 +10,7 @@ pipeline {
     stage('Validation') {
       steps {
         sh '''pip install pytest
-python pytest'''
+pytest'''
       }
     }
 
